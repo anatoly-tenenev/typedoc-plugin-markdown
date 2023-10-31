@@ -1,4 +1,4 @@
-const MarkdownTheme = require('typedoc-plugin-markdown/dist/theme');
+const MarkdownTheme = require('@anatoly-tenenev/typedoc-plugin-markdown/dist/theme');
 
 class CustomMarkdownTheme extends MarkdownTheme.default {
   constructor(renderer, basePath) {

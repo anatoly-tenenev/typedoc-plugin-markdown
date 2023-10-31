@@ -13,8 +13,8 @@ import {
   TypeDocReader,
   UrlMapping,
 } from 'typedoc';
-import { load } from 'typedoc-plugin-markdown';
-import { formatContents } from 'typedoc-plugin-markdown/src/utils';
+import { load } from '@anatoly-tenenev/typedoc-plugin-markdown';
+import { formatContents } from '@anatoly-tenenev/typedoc-plugin-markdown/src/utils';
 
 const STUBS_SRC_PATH = path.join(__dirname, 'stub-project', 'src');
 const STUBS_TSCONFIG_PATH = path.join(
@@ -76,7 +76,7 @@ global.getTemplate = (name: string) => {
   const templateDir = path.resolve(
     __dirname,
     'packages',
-    'typedoc-plugin-markdown',
+    '@anatoly-tenenev/typedoc-plugin-markdown',
     'dist',
     'resources',
     'templates',
@@ -89,7 +89,7 @@ global.getPartial = (name: string) => {
   const partialDir = path.resolve(
     __dirname,
     'packages',
-    'typedoc-plugin-markdown',
+    '@anatoly-tenenev/typedoc-plugin-markdown',
     'dist',
     'resources',
     'partials',
